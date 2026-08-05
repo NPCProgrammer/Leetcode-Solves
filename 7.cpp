@@ -15,12 +15,12 @@ public:
         return x;
     }
 
-    int main() {
+};
+
+int main() {
         Solution sol;
 
         std::cout << sol.reverse(123) << std::endl;
 
         return 0;
     }
-
-};
