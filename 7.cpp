@@ -1,5 +1,6 @@
 // 8/5/2026
-
+#include <iostream>
+#include <string>
 #include <climits>
 class Solution {
 public:
@@ -13,4 +14,13 @@ public:
         }
         return x;
     }
+
+    int main() {
+        Solution sol;
+
+        std::cout << sol.reverse(123) << std::endl;
+
+        return 0;
+    }
+
 };
