@@ -6,9 +6,10 @@ class Solution {
 public:
     int reverse(int x) {
         int temp = x;
+        int permtemp = x;
         x=0;
         int digit;
-        while (temp != 0 && ((x > 0 && (INT_MAX - x) > 0) || (x<0 && (INT_MIN+x) < 0))) {
+        while (temp != 0 && ((temp > 0 && (INT_MAX - temp) > 0) || (temp<0 && (INT_MIN+temp) < 0))) {
             digit = temp % 10;
             x = x*10+digit;
         }
