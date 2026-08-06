@@ -12,6 +12,7 @@ public:
         while (temp != 0 && ((temp > 0 && (INT_MAX - temp) > 0) || (temp<0 && (INT_MIN+temp) < 0))) {
             digit = temp % 10;
             x = x*10+digit;
+            temp = temp / 10;
         }
         return x;
     }
